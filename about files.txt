@@ -1,0 +1,11 @@
+--1 coming file contain how to create a coming soon page with javascript 
+ 
+--2 Contact Us contain how to do contact-us section
+
+--3  galery file contain html/css file exemple for how to use flex-box to order pictures  
+
+--4 parallax file : how to create parallax
+
+--5 service is service section
+
+--6 sign in page 

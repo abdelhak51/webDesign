@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>coming soon</title>
+	</head>
+	<!-- css styling-->
+
+	<style type="text/css">
+		body,html
+		{
+			height:100%;
+			margin:0;
+			padding:0; 
+		}
+		.bgimg
+		{
+			background:url(./img/c1.jpg);
+			height:100%;
+			background-position:center;
+			background-size:cover;
+			position:relative;
+			color:#fff;
+			font-family:Prime;       
+		}
+		.middle
+		{
+			position:absolute;
+			top:  50%;
+			left:50%; 
+			transform:translate(-50%,-50%); 
+			text-align:center; 
+		}
+		h1
+		{
+			font-size:40px;
+			letter-spacing:30px; 
+			font-weight:100;  
+
+		}
+		#demo
+		{
+			font-weight:lighter;
+			word-spacing:20px;  
+		}
+		hr
+		{
+			margin:auto;
+			width:80%;
+			border:1.5px solid #fff;  
+		}
+
+	</style>
+
+	<!--js scripting-->
+     
+     <script type="text/javascript">
+     	//set date we're counting down to
+     	var countDownDate=new Date("Apr 6,2020 00:00:00").getTime();
+
+     	//update the count down every 1 second
+     	var countDownfunction= setInterval(function() {
+     		
+     	//get todays time and date 
+
+     	var now =new Date().getTime();
+        
+        //find distance between now and the count down date 
+
+     	var distance=countDownDate-now;
+        
+        // time calculation for days,hours,minutes,secondes
+
+     	var days=Math.floor(distance/(1000*60*60*24));
+     	var hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+        
+        var minute=Math.floor((distance%(1000*60*60))/(1000*60));
+        var seconds=Math.floor((distance%(1000*60))/1000);
+
+        // output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML=days+" d "+hours +" h "+minute+" m "+seconds+" s ";
+
+        // if th count down is over, write some text
+        if (distance < 0) {
+        	clearInterval(countDownfunction);
+        	document.getElementById("demo").innerHTML="EXPIRED";
+        }
+       },1000);
+     </script>
+
+
+	<div class="bgimg">
+		<div class="middle">
+			<!-- add  heading -->
+			<h1>COMING SOON</h1>
+
+			<!-- adding horizontal ruler -->
+			<hr>
+
+			<!-- adding paragraph -->
+			<p id="demo" style="font-size: 30px"></p>
+
+		</div>
+	</div>
+
+
+<body>
+
+</body>
+</html>
