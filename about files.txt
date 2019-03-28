@@ -9,3 +9,5 @@
 --5 service is service section
 
 --6 sign in page 
+
+and you can find in displayFiles folder each file how it's in browser
